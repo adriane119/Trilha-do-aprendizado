@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/* define a caixa de borda e fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*  cabeçalho do menu */
+#menu-h {
+    background-color: rgb(0, 0, 0); /* Define a cor de fundo do cabeçalho do menu */
+}
+
+#menu-h ul {
+    max-width: 800px; /* Define a largura máxima*/
+    list-style: none; 
+    padding: 10px; 
+    margin: 0; /* Remove a margem */
+}
+
+#menu-h ul li {
+    display: inline-block; /* Exibe os itens em linha*/
+}
+
+#menu-h ul li a {
+    color: #7d0f8b; /* Define a cor do texto*/
+    padding: 20px;
+    display: inline-block; 
+    text-decoration: none;
+}                       
+
+#menu-h ul li a:hover {
+    background-color: rgb(14, 86, 146); /* Altera a cor de fundo quando o mouse passa sobre o link */
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
+
+/*  botão de menu principal */
+.mainmenubtn {
+    background-color: rgb(88, 11, 133); /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão */
+    border: none; 
+    cursor: pointer;
+    padding: 20px; 
+    margin-top: 10px; 
+    margin-left: 100px; /* Adiciona margem esquerda do botão */
+}
+
+.mainmenubtn:hover {
+    background-color: rgb(50, 18, 110); /* Altera a cor de fundo quando o mouse passa no botão */
+}
+
+/*  dropdown menu */
+.dropdown {
+    position: relative; 
+    display: inline-block; 
+}
+
+.dropdown:hover .dropdown-child {
+    display: block; 
+}
+
+.dropdown-child {
+    display: none; 
+    background-color: rgb(92, 31, 190); /* Define a cor de fundo  */
+    min-width: 200px; 
+    position: absolute; 
+}
+
+.dropdown-child a {
+    color: rgb(243, 241, 241); /* Define a cor do texto  */
+    padding: 20px; 
+    text-decoration: none; 
+    display: block; /*  link no dropdown ocupe uma linha inteira */
+}
+
+/* corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif; /*  fonte do corpo da página */
+    background-image: linear-gradient(to right, rgb(15, 15, 15), #9705aa); /*  fundo */
+    width: 90%; /* largura da página */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* cabeçalho */
+header {
+    font-family: Arial, Helvetica, sans-serif; /*  fonte */
+    background-color: rgb(0, 0, 0); /*  cor de fundo  */
+    margin-top: 50px; /* margem superior  */
+    height: 300px; /*  altura  */
+    border-radius: 5px; /*  bordas arredondadas ao cabeçalho */
+}
+
+/*  logo */
+#logo img {
+    width: 45%; /* Define a largura da imagem  */
+    padding-top: 50px;
+}
+
+/*  navegação */
+.navegacao {
+    overflow: hidden; 
+}
+
+.navegacao a {
+    color: #737577; /* Define a cor do texto  */
+    float: right; /* Alinha à direita */
+    display: block; 
+    text-decoration: none; /* Remove o sublinhado dos links */
+    padding: 10px;
+    text-align: right; /* Alinha à direita */
+}
+
+.navegacao a:hover {
+    color: #8d0ba7; /* Altera a cor do texto */
+    background-color: rgb(228, 228, 217); 
+}
+
+/*  conteúdo principal */
+.principal {
+    display: flex; /* layout flexível */
+    flex-direction: row; 
+}
+
+.conteudo{
+    float: left;
+    margin: 15px 2px 25px 2px;
+    background-color: rgb(233, 225, 214);
+    padding: 15px;
+    width: 200%;
+    margin-top: 100px;
+    text-align: justify;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #08101a98;
+}
+.rodape{
+    color: rgb(221, 204, 204);
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,8 @@
+/*define fundo do sobre e do contato*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(15, 15, 15),#b406cb);
+    width: 90%;
+    margin: 0 auto;
+    color: aliceblue;
+}
